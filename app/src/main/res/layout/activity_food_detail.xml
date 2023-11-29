@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5E5E5"
+    tools:context=".FoodDetailActivity">
+
+
+    <ImageView
+        android:id="@+id/img_nam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_keyboard_arrow_left_black_24dp" />
+
+    <ImageView
+        android:id="@+id/img_sau"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/img_bay"
+        app:layout_constraintEnd_toStartOf="@+id/img_bay"
+        app:layout_constraintTop_toTopOf="@+id/img_bay"
+        app:srcCompat="@drawable/ic_bx_share_alt_1" />
+
+    <ImageView
+        android:id="@+id/img_bay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_rectangle_344" />
+
+    <ImageView
+        android:id="@+id/img_tam"
+        android:layout_width="285dp"
+        android:layout_height="305dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_nam"
+        app:srcCompat="@drawable/popularfood1" />
+
+    <TextView
+        android:id="@+id/tv_ba"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="4.8"
+        android:textColor="#272670"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_nam"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_tam" />
+
+    <TextView
+        android:id="@+id/tv_nam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="105"
+        android:textColor="#272670"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_ba"
+        app:layout_constraintEnd_toStartOf="@+id/tv_sau"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_ba"
+        app:layout_constraintTop_toTopOf="@+id/tv_ba" />
+
+    <TextView
+        android:id="@+id/tv_sau"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="375"
+        android:textColor="#272670"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_nam"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_nam"
+        app:layout_constraintTop_toTopOf="@+id/tv_nam" />
+
+    <TextView
+        android:id="@+id/tv_bay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="Đánh giá"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_ba"
+        app:layout_constraintStart_toStartOf="@+id/tv_ba"
+        app:layout_constraintTop_toBottomOf="@+id/tv_ba" />
+
+    <TextView
+        android:id="@+id/tv_tam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="yêu thích"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_nam"
+        app:layout_constraintStart_toStartOf="@+id/tv_nam"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nam" />
+
+    <TextView
+        android:id="@+id/tv_chin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="Đặt hàng"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_sau"
+        app:layout_constraintStart_toStartOf="@+id/tv_sau"
+        app:layout_constraintTop_toBottomOf="@+id/tv_sau" />
+
+    <TextView
+        android:id="@+id/tv_muoi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="Món ăn Châu Á"
+        android:textColor="#FF6813"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_bay" />
+
+    <TextView
+        android:id="@+id/tv_muoi_mot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Bánh Trôi Vietnam"
+        android:textColor="#091020"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_muoi"
+        app:layout_constraintTop_toBottomOf="@+id/tv_muoi" />
+
+    <ImageView
+        android:id="@+id/img_chin"
+        android:layout_width="40dp"
+        android:layout_height="52dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_muoi"
+        app:srcCompat="@drawable/tagfree" />
+
+    <TextView
+        android:id="@+id/tv_muoi_hai"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:lineSpacingExtra="2dp"
+        android:text="Bánh trôi là loại bánh rất nổi tiếng trong ẩm thực người việt nam.Loại bánh này xuát hiện đã rất lâu.Ăn vào có vị ngọt thanh tươi mát mềm mọng."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_muoi_mot" />
+
+    <ImageView
+        android:id="@+id/img_muoi"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_muoi_hai"
+        app:srcCompat="@drawable/ic_group_400" />
+
+    <TextView
+        android:id="@+id/tv_muoi_ba"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="01"
+        android:textColor="#272670"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/img_muoi"
+        app:layout_constraintStart_toEndOf="@+id/img_muoi"
+        app:layout_constraintTop_toTopOf="@+id/img_muoi" />
+
+    <ImageView
+        android:id="@+id/img_muoi_mot"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_muoi_ba"
+        app:layout_constraintStart_toEndOf="@+id/tv_muoi_ba"
+        app:layout_constraintTop_toTopOf="@+id/tv_muoi_ba"
+        app:srcCompat="@drawable/ic_group_401" />
+
+    <TextView
+        android:id="@+id/tv_muoi_bon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="5.78 đ"
+        android:textColor="#272670"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/img_muoi_mot"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/img_muoi_mot" />
+
+    <ImageView
+        android:id="@+id/img_muoi_hai"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_group_1675" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

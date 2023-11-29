@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".SetUpCategoryActivity">
+    <TextView
+        android:id="@+id/tv_test"
+        android:text="Set up Danh mục món ăn"
+        android:textSize="30sp"
+        android:textColor="@color/orange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/edt_category_name"
+        android:textSize="16sp"
+        android:hint="Nhập danh mục đồ ăn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/edt_category_des"
+        android:textSize="16sp"
+        android:hint="Nhập mô tả"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@+id/img_camera_set_up_cate"
+            android:src="@drawable/baseline_photo_camera_black_48"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:layout_gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+        <ImageView
+            android:id="@+id/img_set_up_cate"
+            android:src="@drawable/baseline_image_black_48"
+            android:layout_weight="2"
+            android:layout_width="150dp"
+            android:layout_height="150dp"/>
+        <ImageButton
+            android:id="@+id/img_folder_set_up_cate"
+            android:src="@drawable/baseline_folder_black_48"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:layout_gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_add_cate"
+        android:layout_marginTop="20dp"
+        android:text="Add"
+        android:textSize="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tv_delete_all_cate"
+        android:textSize="20dp"
+        android:textColor="#F44336"
+        android:layout_gravity="end"
+        android:text="Delete All"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="10dp"
+        android:id="@+id/rcv_set_up_cate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
